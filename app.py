@@ -6,7 +6,8 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 import base64
 
 # Informations personnelles
-photo_url = "https://github.com/CodingYayaToure/Premier_projet/blob/main/yaya_cncs-modified%20(1).png?raw=true"
+#photo_url = "https://github.com/CodingYayaToure/Premier_projet/blob/main/yaya_cncs-modified%20(1).png?raw=true"
+photo_url = "CFD_2024.png"
 prenom = "Yaya"
 nom = "Toure"
 email = "yaya.toure@unchk.edu.sn"
@@ -95,7 +96,7 @@ def scrape_data(max_pages, category):
 
 # Interface Streamlit
 st.sidebar.title("Informations personnelles")
-st.sidebar.image(photo_url, caption=f"{prenom} {nom}", width=200)
+st.sidebar.image(photo_url, caption=f"{prenom} {nom}", width=430)
 st.sidebar.write(f"Nom: {prenom} {nom}")
 st.sidebar.write(f"Email: {email}")
 st.sidebar.markdown(f"[Whatsapps]({whatsapps_url})")
